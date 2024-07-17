@@ -1,11 +1,11 @@
 console.log('Hello, Resturant Page')
 
 //import home page
-
-import loadHome from "./home";
-import loadContact from "./contact";
-import loadMenu from "./menu";
-import loadAboutUs from "./aboutUs";
+import './css/styles.css'
+import loadHome from "./js/home";
+import loadContact from "./js/contact";
+import loadMenu from "./js/menu";
+import loadAboutUs from "./js/aboutUs";
 
 document.addEventListener('DOMContentLoaded', () => {
     loadHome();
