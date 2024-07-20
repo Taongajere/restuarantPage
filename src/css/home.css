@@ -1,0 +1,139 @@
+/* src/css/home.css */
+
+/* src/css/home.css */
+body {
+    font-family: Georgia;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav button {
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+nav button:hover {
+    color: #ff6347;
+}
+
+#content {
+    padding: 20px;
+    text-align: center;
+}
+/*top section of the home page*/
+.top-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 40px;
+}
+
+.text-container {
+    text-align: left;
+    max-width: 60%; /* Adjust this value based on your layout needs */
+}
+.top-section h1 {
+    font-size: 70px;
+    margin: 0 0 10px 0;
+
+}
+.top-section p {
+    font-size: 18px;
+    margin: 0 0 20px 0;
+}
+.burger-image {
+    max-width: 55%; /* Adjust this value based on your layout needs */
+    height: auto;
+}
+.order-button {
+    display: inline-block;
+    background-color: #ff6347;
+    color: #ffffff;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+/*Info cards*/
+.info-icon {
+    max-width: 50px; /* Adjust this value based on your layout needs */
+    height: auto;
+}
+.info-cards {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 0;
+}
+
+.info-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    width: 30%;
+    border-radius: 40px;
+}
+
+/*bottom section*/
+.foodGeneral {
+    max-width: 600px; /* Adjust this value based on your layout needs */
+    height: auto;
+}
+.bottom-section {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 40px;
+}
+.wordsContainer{
+    text-align: right;
+    max-width: 600px;
+}
+.wordsContainer h3{
+    font-family: Georgia;
+    font-size: 20px;
+    color: #ff6347;
+    margin-bottom: 50px;
+}
+.wordsContainer h2 {
+    font-family: Georgia;
+    font-size: 55px;
+    margin: 0 0 10px 0;
+}
+
+.wordsContainer p {
+    font-size: 16px;
+    margin: 60px 0 20px 0;
+}
+
+.learn-more-button, .watch-video-button {
+    margin-top: 100px;
+    background-color: #ff6347;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 60px 0px 30px 30px;
+    border-radius: 30px;
+}
+
