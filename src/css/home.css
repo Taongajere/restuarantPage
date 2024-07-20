@@ -1,39 +1,9 @@
 /* src/css/home.css */
 
 /* src/css/home.css */
-body {
-    font-family: Georgia;
-    margin: 0;
-    padding: 0;
-    background-color: #f5f5f5;
-}
-
-header {
-    background-color: #ffffff;
-    border-bottom: 1px solid #ddd;
-    padding: 10px 0;
-}
-
-nav {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-nav button {
-    background-color: transparent;
-    border: none;
-    font-size: 16px;
-    cursor: pointer;
-    padding: 10px;
-}
-
-nav button:hover {
-    color: #ff6347;
-}
 
 #content {
-    padding: 20px;
+    padding: 0px 0px 0px 0px;
     text-align: center;
 }
 /*top section of the home page*/
@@ -42,7 +12,7 @@ nav button:hover {
     align-items: center;
     justify-content: space-between;
     background-color: #ffffff;
-    padding: 40px;
+    padding: 0px 0px 40px 40px ;
 }
 
 .text-container {

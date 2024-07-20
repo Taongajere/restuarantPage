@@ -9,7 +9,7 @@ import loadAboutUs from "./js/aboutUs";
 
 document.addEventListener('DOMContentLoaded', () => {
     loadHome();
-
+ 
     const homeButton = document.getElementById('home');
     const menuButton = document.getElementById('menu');
     const contactButton = document.getElementById('contact');

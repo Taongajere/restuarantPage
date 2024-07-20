@@ -1,4 +1,5 @@
 // src/menu.js
+
 export default function loadMenu() {
     const content = document.getElementById('content');
   
@@ -10,4 +11,6 @@ export default function loadMenu() {
   
     content.appendChild(menuDiv);
 }
+
+
   
