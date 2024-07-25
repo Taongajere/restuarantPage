@@ -1,0 +1,81 @@
+.about-us {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.contentWords {
+    max-width: 60%;
+    padding-left: 100px;
+    padding-top: 100px;
+}
+
+.about-us h1 {
+    color: #333;
+    font-size: 70px;
+    text-align: left;
+}
+
+.details {
+    color: #666;
+    text-align: left;
+    margin: 30px 20px 20px 0px;
+}
+
+.about-us .buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.about-us .btn {
+    text-decoration: none;
+    padding: 15px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.about-us .btn.order {
+    background-color: #ff6347;
+    color: white;
+}
+
+.about-us .btn.read-more {
+    background-color: transparent;
+    color: #ff6347;
+    border: 2px solid #ff6347;
+}
+
+.about-us .image {
+    max-width: 40%;
+}
+
+.about-us .image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.titleFlex {
+    display: flex;
+    align-items: left;
+}
+.title{
+    margin-top: 80px;
+    font-size: 30px;
+    font-family: Georgia;
+    color:#ff6347;
+}
+.contactUsFlex{
+    display: flex;
+    margin: 30px 30px 80px 0px;
+}
+.contactUs {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    width: 200px;
+    height: auto;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-right: 50px;
+    padding: 20px;
+}
+
