@@ -8,6 +8,7 @@ import loadAboutUs from "./js/aboutUs";
 
 document.addEventListener('DOMContentLoaded', () => {
     loadHome();
+    setActiveTab('home');
  
     const homeButton = document.getElementById('home');
     const menuButton = document.getElementById('menu');
@@ -16,16 +17,19 @@ document.addEventListener('DOMContentLoaded', () => {
     homeButton.addEventListener('click', () => {
         clearContent();
         loadHome();
+        setActiveTab('home');
     });
 
     menuButton.addEventListener('click', () => {
         clearContent();
         loadMenu();
+        setActiveTab('menu');
     });
 
     aboutUsButton.addEventListener('click',() => {
         clearContent();
         loadAboutUs();
+        setActiveTab('aboutUs');
     });
 
 });
@@ -36,4 +40,14 @@ function clearContent() {
 }
 
 
+export function setActiveTab(activeTabId) {
+    const buttons = document.querySelectorAll('.navButton');
+    buttons.forEach(button => {
+        if (button.id === activeTabId) {
+            button.classList.add('active');
+        } else {
+            button.classList.remove('active');
+        }
+    });
+}
 

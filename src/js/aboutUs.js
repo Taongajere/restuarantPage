@@ -3,6 +3,8 @@ import '../css/aboutUs.css';
 import burger2 from '../assets/burger2.png'
 import phone from '../assets/icons/phone.png'
 import loadMenu from '../js/menu';
+import { setActiveTab } from '../index'; // Adjust the path as needed
+
 
 export default function loadAboutUs() {
     const content = document.getElementById('content');
@@ -47,6 +49,7 @@ export default function loadAboutUs() {
         event.preventDefault(); // Prevent default anchor behavior
         clearContent();
         loadMenu(); // Call loadMenu function to load the menu content
+        setActiveTab('menu'); // Set the active tab to 'menu'
     });
 
 }

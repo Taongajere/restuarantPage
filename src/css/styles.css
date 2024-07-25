@@ -69,3 +69,8 @@ header #signUp:hover {
 #content {
   padding: 2em;
 }
+
+/*adds a border under selected item*/
+.navButton.active {
+  border-bottom: 3px solid #ff5733; /* Add underline to the active tab */
+}

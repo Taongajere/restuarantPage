@@ -7,6 +7,7 @@ import clock from '../assets/icons/clock.png'
 import location from '../assets/icons/location.png'
 import phone from '../assets/icons/phone.png'
 import foodGeneral from '../assets/foodGeneral.jpg'
+import { setActiveTab } from '../index'; // Adjust the path as needed
 
 function loadHome() {
     const content = document.getElementById('content');
@@ -76,11 +77,13 @@ function loadHome() {
     orderNow.addEventListener('click', () => {
       clearContent();
       loadMenu();
+      setActiveTab('menu')
     })
 
     learnMore.addEventListener('click', () => {
       clearContent();
       loadAboutUs();
+      setActiveTab('aboutUs')
     })
 }
 
