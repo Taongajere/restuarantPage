@@ -2,6 +2,7 @@
 import '../css/aboutUs.css';
 import burger2 from '../assets/burger2.png'
 import phone from '../assets/icons/phone.png'
+import loadMenu from '../js/menu';
 
 export default function loadAboutUs() {
     const content = document.getElementById('content');
@@ -16,7 +17,7 @@ export default function loadAboutUs() {
             <h1>Have no time to prepare food?</h1>
             <p class="details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure nesciunt eaque explicabo, deserunt error veniam! Expedita animi perferendis modi consequuntur ducimus, consectetur magni. Accusamus impedit modi vero aut officia qui.</p>
             <div class="buttons">
-                <a href="#" class="btn order">Order food</a>
+                <a href="#" class="btn order" ID = "order">Order food</a>
                 <a href="#" class="btn read-more">Read more</a>
             </div>
 
@@ -40,5 +41,16 @@ export default function loadAboutUs() {
     `;
   
     content.appendChild(aboutUsDiv);
+    const orderNow = document.getElementById("order");
+
+    orderNow.addEventListener('click', (event) => {
+        event.preventDefault(); // Prevent default anchor behavior
+        clearContent();
+        loadMenu(); // Call loadMenu function to load the menu content
+    });
+
 }
-  
+function clearContent() {
+    const content = document.getElementById('content');
+    content.innerHTML = "";
+}

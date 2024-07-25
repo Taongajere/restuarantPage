@@ -1,67 +1,71 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* General Styles */
-  body {
-    font-family: Helvitica;
-  }
-  
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: white;
-    color: black;
-    padding: 20px 0px 40px 40px; /* Add padding to the header element */
-  }
-  
-  header .logo {
-    flex: 1;
-    max-width: 10px;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  nav {
-    flex: 20;
-    display: flex;
-    justify-content: center;
-  }
-  
-  nav button {
-    background-color: white;
-    color: black;
-    border: none;
-    padding: 0.5em 2em;
-    cursor: pointer;
-    font-size: 1em;
-    font-weight: 600;
-    margin: 0 0.5em;
-    border-radius: 20px;
-  }
-  
-  nav button:hover {
-    background-color: #777;
-  }
-  
-  header #signUp {
-    background-color: #ff5733;
-    color: white;
-    border: none;
-    padding: 0.5em 2em;
-    cursor: pointer;
-    font-size: 1em;
-    font-weight: 600;
-    border-radius: 20px;
-  }
-  
-  header #signUp:hover {
-    background-color: #a34b30;
-  }
-  
-  #content {
-    padding: 2em;
-  }
-  
-  
+/* General Styles */
+body {
+  font-family: Helvetica, Arial, sans-serif; /* Added fallback fonts */
+  margin-top: 80px; /* Added margin to prevent content from hiding behind the fixed header */
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  color: black;
+  padding: 20px 40px; /* Simplified padding */
+  position: fixed; /* Make the header fixed */
+  top: 0; /* Position it at the top */
+  width: 100%; /* Full width */
+  z-index: 1000; /* Ensure it stays above other elements */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: add shadow for visual separation */
+}
+
+header .logo {
+  flex: 1;
+  max-width: 10px;
+}
+
+nav {
+  flex: 20;
+  display: flex;
+  justify-content: center;
+}
+
+nav button {
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 0.5em 2em;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 600;
+  margin: 0 0.5em;
+  border-radius: 20px;
+}
+
+nav button:hover {
+  background-color: #777;
+}
+
+header #signUp {
+  background-color: #ff5733;
+  color: white;
+  border: none;
+  padding: 0.5em 2em;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 600;
+  border-radius: 20px;
+}
+
+header #signUp:hover {
+  background-color: #a34b30;
+}
+
+#content {
+  padding: 2em;
+}
