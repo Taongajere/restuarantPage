@@ -1,30 +1,33 @@
 .about-us {
     display: flex;
     justify-content: space-between;
+    align-items: center; /* Use center for proper alignment */
     background-color: white;
 }
 
 .contentWords {
     max-width: 60%;
-    padding-left: 100px;
+    padding-right: 100px;
     padding-top: 100px;
+    text-align: right; /* Align text to the right */
 }
 
 .about-us h1 {
     color: #333;
     font-size: 70px;
-    text-align: left;
+    text-align: right;
 }
 
 .details {
     color: #666;
-    text-align: left;
-    margin: 30px 20px 20px 0px;
+    text-align: right;
+    margin: 30px 20px 20px 0;
 }
 
 .about-us .buttons {
     display: flex;
     gap: 15px;
+    justify-content: flex-end; /* Align buttons to the right */
 }
 
 .about-us .btn {
@@ -56,18 +59,22 @@
 
 .titleFlex {
     display: flex;
-    align-items: left;
+    justify-content: flex-end; /* Align title to the right */
 }
-.title{
+
+.title {
     margin-top: 80px;
     font-size: 30px;
     font-family: Georgia;
-    color:#ff6347;
+    color: #ff6347;
 }
-.contactUsFlex{
+
+.contactUsFlex {
     display: flex;
-    margin: 30px 30px 80px 0px;
+    margin: 30px 0px 80px 0;
+    justify-content: flex-end; /* Align contact us to the right */
 }
+
 .contactUs {
     background-color: #ffffff;
     border: 1px solid #ddd;
@@ -75,7 +82,7 @@
     height: auto;
     border-radius: 40px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    margin-right: 50px;
+    margin-left: 50px;
     padding: 20px;
+    text-align: right; /* Align text inside the contact us box to the right */
 }
-

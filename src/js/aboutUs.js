@@ -9,6 +9,9 @@ export default function loadAboutUs() {
     const aboutUsDiv = document.createElement('div');
     aboutUsDiv.innerHTML = `
       <section class="about-us">
+        <div class="image">
+            <img <img src="${burger2}" alt="Burger2" " alt="Delicious food">
+        </div>
         <div class="contentWords">
             <h1>Have no time to prepare food?</h1>
             <p class="details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure nesciunt eaque explicabo, deserunt error veniam! Expedita animi perferendis modi consequuntur ducimus, consectetur magni. Accusamus impedit modi vero aut officia qui.</p>
@@ -32,9 +35,6 @@ export default function loadAboutUs() {
                     <p>Call Online</p>
                 </div>
             </div>
-        </div>
-        <div class="image">
-            <img <img src="${burger2}" alt="Burger2" " alt="Delicious food">
         </div>
       </section>
     `;
