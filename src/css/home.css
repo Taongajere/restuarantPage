@@ -32,7 +32,7 @@
     max-width: 55%; /* Adjust this value based on your layout needs */
     height: auto;
 }
-.order-button {
+.orderButton {
     display: inline-block;
     background-color: #ff6347;
     color: #ffffff;
@@ -95,7 +95,7 @@
     margin: 60px 0 20px 0;
 }
 
-.learn-more-button, .watch-video-button {
+.learnMoreButton, .watchVideoButton {
     margin-top: 100px;
     background-color: #ff6347;
     color: #ffffff;

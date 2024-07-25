@@ -1,5 +1,7 @@
 // src/js/home.js
 import '../css/home.css';
+import loadMenu from '../js/menu';
+import loadAboutUs from '../js/aboutUs';
 import burgerImage from '../assets/burgerImage.png'
 import clock from '../assets/icons/clock.png'
 import location from '../assets/icons/location.png'
@@ -17,7 +19,7 @@ function loadHome() {
         <div class="text-container">
           <h1>Your Favourite Food Delivered & Fresh</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla magna mauris.</p>
-          <button class="order-button">Order Now</button>
+          <button class="orderButton" ID = "order" >Order Now</button>
         </div>
         <img src="${burgerImage}" alt="Burger" class="burger-image">
     `;
@@ -58,8 +60,8 @@ function loadHome() {
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt eos ea necessitatibus ex, culpa excepturi ullam ducimus quia nihil enim sit repellat cupiditate, perferendis corporis? Accusamus laborum voluptatem id dignissimos?</p>
           
           <button class="bottomSection">
-            <button class="learn-more-button">Learn More</button>
-            <button class="watch-video-button">Watch Video</button>
+            <button class="learnMoreButton" ID = "learnMore">Learn More</button>
+            <button class="watchVideoButton">Watch Video</button>
           </button>
         </div>
     `;
@@ -67,6 +69,24 @@ function loadHome() {
     content.appendChild(topSection);
     content.appendChild(infoCards);
     content.appendChild(bottomSection);
+
+    const orderNow = document.getElementById("order");
+    const learnMore = document.getElementById("learnMore");
+
+    orderNow.addEventListener('click', () => {
+      clearContent();
+      loadMenu();
+    })
+
+    learnMore.addEventListener('click', () => {
+      clearContent();
+      loadAboutUs();
+    })
 }
 
+
+function clearContent() {
+  const content = document.getElementById('content');
+  content.innerHTML = "";
+}
 export default loadHome;
